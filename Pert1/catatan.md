@@ -56,3 +56,85 @@ a. Dibagian Header menampilkan Profile, media sosial, dan biodata pribadi.
 b.
 
 13:00 - 15:30
+Jenis-jenis tag yang ada di HTML:
+1. Struktur Dasar HTML
+<html> → Menandai awal dan akhir dokumen HTML.
+
+<head> → Berisi metadata seperti judul, link stylesheet, dan script.
+
+<body> → Berisi konten utama halaman web.
+
+2. Elemen Teks
+<h1> - <h6> → Heading (judul) dengan ukuran dari besar (h1) ke kecil (h6).
+
+<p> → Paragraf teks.
+
+<br> → Baris baru (line break).
+
+<hr> → Garis horizontal.
+
+<strong> → Teks tebal (bold).
+
+<em> → Teks miring (italic).
+
+3. Elemen List (Daftar)
+<ul> → Unordered list (daftar tanpa nomor).
+
+<ol> → Ordered list (daftar bernomor).
+
+<li> → List item (digunakan dalam <ul> atau <ol>).
+
+4. Elemen Tabel
+<table> → Membuat tabel.
+
+<tr> → Baris tabel.
+
+<td> → Sel tabel (isi data).
+
+<th> → Sel header tabel.
+
+<thead>, <tbody>, <tfoot> → Bagian tabel (kepala, isi, kaki).
+
+5. Elemen Formulir
+<form> → Form untuk input data.
+
+<input> → Elemen input (teks, password, checkbox, radio, dll.).
+
+<textarea> → Kotak input teks panjang.
+
+<select> → Dropdown list.
+
+<option> → Opsi dalam <select>.
+
+<button> → Tombol interaktif.
+
+6. Elemen Multimedia
+<img> → Menampilkan gambar.
+
+<audio> → Memutar audio.
+
+<video> → Memutar video.
+
+<iframe> → Menyisipkan halaman web lain.
+
+7. Elemen Link & Navigasi
+<a> → Link (anchor) ke halaman lain.
+
+<nav> → Navigasi utama halaman web.
+
+8. Elemen Layout & Struktur
+<div> → Blok elemen untuk mengelompokkan konten.
+
+<span> → Elemen inline untuk styling teks.
+
+<header> → Bagian atas halaman.
+
+<footer> → Bagian bawah halaman.
+
+<section> → Bagian terpisah dalam halaman.
+
+<article> → Artikel atau konten mandiri.
+
+<aside> → Sidebar atau konten sampingan.
+
+16:00 - 18:00
