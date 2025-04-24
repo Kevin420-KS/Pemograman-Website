@@ -21,10 +21,15 @@ class ProductResource extends Resource
     protected static ?string $navigationGroup = 'Product';
     protected static ?string $navigationLabel = 'Product Manager';
     protected static ?string $breadcrumb = 'Product Manager';
-    protected static ?string $pluralLabell = 'Product Setting';
+    protected static ?string $pluralLabel = 'Product Setting';
     public static function getNavigationSort(): ?int
     {
         return crc32(static::getNavigationLabel()) % 100;
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
     }
 
     public static function form(Form $form): Form
@@ -34,7 +39,7 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('desc')
+                Forms\Components\TextInput::make('description')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
@@ -49,7 +54,7 @@ class ProductResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('desc')
+                Tables\Columns\TextColumn::make('description')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')
@@ -68,7 +73,6 @@ class ProductResource extends Resource
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                
             ]);
     }
 
@@ -83,20 +87,23 @@ class ProductResource extends Resource
     {
         return [
             'index' => Pages\ListProducts::route('/'),
-            // 'create' => Pages\CreateProduct::route('/create'),
+            //'create' => Pages\CreateProduct::route('/create'),
             'edit' => Pages\EditProduct::route('/{record}/edit'),
         ];
     }
 
-    public static function CanCreate() : bool {
+    public static function canCreate(): bool
+    {
         return Product::count()=== 0;
     }
 
-    public static function CanDelete(\Illuminate\Database\Eloquent\Model $record) : bool {
+    public static function canDelete(\Illuminate\Database\Eloquent\Model $record): bool
+    {
         return false;
     }
-    
-    public static function CanDeleteAny() : bool {
+
+    public static function canDeleteAny(): bool
+    {
         return false;
     }
 }

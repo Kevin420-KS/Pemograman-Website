@@ -29,7 +29,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('dashboard')
+            ->path('admin')
             ->spa()
             ->login()
             ->passwordReset()
@@ -53,7 +53,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationGroups([
                 NavigationGroup::make()
-                    ->label('Product'),
+                    ->label('Administration'),
             ])
             ->userMenuItems([
                 'profile' => MenuItem::make()

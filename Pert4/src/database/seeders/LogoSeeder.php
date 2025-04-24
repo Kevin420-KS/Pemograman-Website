@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Logo;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Logo
 
 class LogoSeeder extends Seeder
 {
@@ -13,11 +13,13 @@ class LogoSeeder extends Seeder
      */
     public function run(): void
     {
+        
+
         if(Logo::count()==0){
             Logo::create([
-                'title'=>'YOU',
-                'image'=>'',
+                'title' => 'PemWeb',
+                'image' => '',
             ]);
-        }
+        } 
     }
 }
