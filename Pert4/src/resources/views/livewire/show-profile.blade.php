@@ -9,7 +9,7 @@
                         <img src="{{ asset('front/images/profile.jpg') }}"
                           class="rounded-circle img-fluid" style="width: 100px;" />
                       </div>
-                    <h5 class="my-3">AQLA HARUN RAMADHANI J.</h5> <!--ISI NAMA SENDIRI-->
+                    <h5 class="my-3">Kevin Sebastian Sihombing</h5> <!--ISI NAMA SENDIRI-->
                     <p class="text-muted mb-1">Fakultas Ilmu Komputer</p>
                     <p class="text-muted mb-4">Teknik Informatika</p>
                     <div class="d-flex justify-content-center mb-2">
@@ -22,7 +22,7 @@
     </div>
     <!-- END PROFILE -->
 
-    <!--ABOuT-->
+    <!--About-->
     <div class="card-body p-4 text-black justify-content-center">
         <div class="mb-2 text-body">
             <p class="lead fw-normal mb-1 text-center"> ABOUT ME</p>

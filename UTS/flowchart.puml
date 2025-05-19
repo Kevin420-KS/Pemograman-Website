@@ -1,0 +1,25 @@
+@startuml
+start
+
+:Pengguna membuka Website;
+
+if (Login sebagai Admin?) then (Ya)
+  :Tampilkan Dashboard Admin;
+  if (Kelola Data?) then (Ya)
+    :Input/Edit Data Sales;
+    :Input/Edit Lokasi Dealer;
+    :Input/Edit Data Penjualan Mobil;
+  else
+    :Lihat Data Penjualan;
+  endif
+  :Logout;
+else
+  :Tampilkan Halaman User;
+
+  :Lihat Data Penjualan Mobil;
+  :Lihat Info Kontak Sales;
+  :Lihat Lokasi Dealer;
+endif
+
+stop
+@enduml
