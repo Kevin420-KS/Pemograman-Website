@@ -1,12 +1,3 @@
-@php
-    $footer = \App\Models\Footer::first();
-@endphp
-
-
-<footer class="section-sm bg-tertiary">
-	<div class="container">
-        <div class="container d-flex justify-content-center">
-            <a wire:navigate href="{{ route ('home') }}"> {{$footer->label ?? ''}}</a>
-        </div>
-	</div>
+<footer class="py-6 text-center text-gray-400">
+    <p>Website ini dibuat oleh Mahasiswa Esa Unggul, Citra Raya, Tangerang. 2025</p>
 </footer>

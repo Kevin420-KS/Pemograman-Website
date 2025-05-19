@@ -1,25 +1,13 @@
-@php
-$logo = \App\Models\Logo::first();
+<nav class="bg-gray-900 py-4">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="text-2xl font-bold text-white mb-2 md:mb-0">Ucup Garage</a>
 
-@endphp
-
-<header class="navigation bg-tertiary">
-	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-		<div class="container">
-			<a class="navbar-brand" href="{{ route('home') }}">
-				<img src="{{ asset('storage/' . $logo->image) }}" 
-				alt=""
-				class="img-fluid" width="200px" height="200px">				
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav m-auto mb-2 mb-lg-0">
-					<li class="nav-item"> <a wire:navigate class="nav-link" href="{{ route ('home') }}">Home</a></li>
-					<li class="nav-item"> <a wire:navigate class="nav-link" href="{{ route ('profile') }}">Profile</a></li>
-					<li class="nav-item"> <a wire:navigate class="nav-link" href="{{ route ('about') }}">About Me</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
+        <!-- Menu Tengah -->
+        <div class="flex justify-center w-full md:w-auto space-x-6">
+            <a href="/" class="text-white hover:text-yellow-400">Home</a>
+            <a href="/about" class="text-white hover:text-yellow-400">About</a>
+            <a href="/more" class="text-white hover:text-yellow-400">More</a>
+        </div>
+    </div>
+</nav>

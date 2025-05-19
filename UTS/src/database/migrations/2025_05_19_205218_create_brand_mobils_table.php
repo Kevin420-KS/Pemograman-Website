@@ -12,9 +12,9 @@ return new class extends Migration
             $table->id();
             $table->string('nama_brand');
             $table->string('jenis_mobil');
-            $table->string('gambar_brand')->nullable(); 
+            $table->string('gambar_brand')->nullable();
             $table->string('logo_brand')->nullable();
-            $table->text('keterangan')->nullable();   
+            $table->text('keterangan')->nullable();
             $table->timestamps();
         });
     }

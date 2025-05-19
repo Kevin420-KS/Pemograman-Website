@@ -11,9 +11,12 @@ class BrandMobil extends Model
 
     protected $fillable = [
         'nama_brand',
-        'jenis_mobil',
-        'gambar_brand',
-        'logo_brand',
-        'keterangan',
+        // add other brand-related fields
     ];
+
+    // Optional inverse relationship
+    public function penjualanMobils()
+    {
+        return $this->hasMany(PenjualanMobil::class, 'brand_mobil_id');
+    }
 }
